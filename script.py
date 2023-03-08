@@ -13,3 +13,8 @@ print("Average Price: ${0}".format(average_price))
 
 new_prices = [price - 5 for price in prices]
 print(new_prices)
+
+total_revenue = 0
+for i in range(len(hairstyles)):
+  total_revenue += prices[i] * last_week[i]
+print("Total Revenue: ${0}".format(total_revenue))
