@@ -7,4 +7,6 @@ last_week = [2, 3, 5, 8, 4, 4, 6, 2]
 total_price = 0
 
 for price in prices:
-  total_price = total_price + price
+  total_price += price
+average_price = total_price / len(prices)
+print("Average Price: ${0}".format(average_price))
